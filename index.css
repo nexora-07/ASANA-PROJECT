@@ -30,6 +30,142 @@ nav{
     position: fixed;
 }
 
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6em;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 46px;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;  /* stack content + footer */
+  background-color: #FFFFFF;
+  border: none;
+  display: none;
+  z-index: 999;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: flex;
+}
+
+/* main columns */
+.dropdown-content {
+  display: flex;
+  gap: 3rem;
+  padding: 56px 5%;
+  flex: 1;
+}
+
+.dropdown-column.wide { flex: 1; }
+.dropdown-column { flex: 2; }
+
+.dropdown-column .title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dddfdf;
+  padding-bottom: 0.5rem;
+}
+
+.dropdown-column ul li {
+  margin: 0.5rem 0;
+}
+
+.dropdown-column ul li a {
+  text-decoration: none;
+  color: #151B26;
+  font-size: 15px;
+}
+
+.dropdown-column ul li a:hover{
+    background-color: #FAFAF9;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 14px;
+    border-radius: 6px;
+}
+
+/* footer links */
+.nav-dropdown-footer {
+  /* display: flex; */
+  /* justify-content: center; */
+  background: #EEEBEA; /* light highlight */
+  border-top: 1px solid #eee;
+  padding: 12px 5%;
+}
+
+.nav-dropdown-footer ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-dropdown-footer ul li a {
+  text-decoration: none;
+  color: #151B26;
+  font-size: 14px;
+}
+
+.nav-dropdown-footer-border-left, .nav-dropdown-footer-border-left2{
+    padding-left: 20px;
+}
+
+.nav-dropdown-footer-border-left{
+    border-left: 2px solid #A5A4A3;
+}
+
+.nav-dropdown-footer-border-left2{
+    border-left: 1px solid #A5A4A3;
+}
+
+.dropdown-column2{
+    flex: 1;
+}
+.dropdown-column2.highlight{
+    flex: 2;
+}
+
+.dropdown-column2 .title {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dddfdf;
+  padding-bottom: 0.5rem;
+}
+
+.dropdown-column2 ul li {
+  margin: 0.5rem 0;
+}
+
+.dropdown-column2 ul li a {
+  text-decoration: none;
+  color: #151B26;
+  font-size: 15px;
+}
+
+.dropdown-column2 ul li a:hover{
+    background-color: #FAFAF9;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 0px;
+    padding-right: 14px;
+    border-radius: 6px;
+}
+
+
 a{
     text-decoration: none;
     color: #707070;
@@ -57,6 +193,7 @@ ul{
     font-weight: 500;
 }
 
+
 .material-symbols-outlined{
     display: flex;
     align-items: center;
@@ -78,6 +215,10 @@ ul{
     color: black;
 }
 
+.hamburger{
+    display: none;
+}
+
 
 .section-1{
     background-color: #FFEAEC;
@@ -86,6 +227,7 @@ ul{
 .hero-section{
     width: 90%;
     margin: auto;
+    min-width: 90%;
 }
 
 .big{
@@ -109,6 +251,10 @@ ul{
 .big-btn{
     text-align: center;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
 }
 .btn1{
     background-color: #690031;
@@ -117,13 +263,6 @@ ul{
     border-radius: 40px;
     border: none;
     font-size: 1.2em;
-}
-
-.object-fit-cover{
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-right-radius: 16px;
 }
 
 .btn1:hover{
@@ -143,6 +282,13 @@ ul{
 
 .btn2:hover{
     background-color: #F0D3D9;
+}
+
+.object-fit-cover{
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 
@@ -255,22 +401,31 @@ ul{
     border: #6E6E6E;
 }
 
-.section-3{
+.section-3 {
     background-color: #CBEFFF;
 }
 
-.sets-asana-apart{
+.sets-asana-apart {
     width: 90%;
-    margin: auto;   
+    margin: auto;
 }
 
-.sets-h2{
+.sets-h2 {
     color: #222875;
     font-size: 3.2em;
     padding-bottom: 32px;
+    text-align: center;
 }
 
-.rec1, .rec2{
+/* Container for the two blue rectangles */
+.blue-recs {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+/* Cards */
+.rec1, .rec2 {
     width: 400px;
     height: 520px;
     background-color: #222875;
@@ -283,66 +438,59 @@ ul{
     transition: width 0.5s ease-in-out; 
 }
 
+/* Hover effect on desktop */
+.rec1:hover, .rec2:hover {
+    width: 720px; /* expand on hover */
+}
 
-.rec1-image, .rec2-image{
+/* Images inside cards */
+.rec1-image, .rec2-image {
     position: absolute;
     bottom: 0;
     right: 0;
+    width: 314px;
+    height: auto;
     border-bottom-right-radius: 16px;
     opacity: 0;
-    width: 314px;
-    height: 420;
-}
-
-.rec1:hover, .rec2:hover {
-    width: 720px;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.rec1:hover img, .rec2:hover img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-bottom-right-radius: 16px;
-    opacity: 1;
     transition: opacity 0.8s ease-in;
 }
 
-.bigtext-rec1, .bigtext-rec2{
+/* Show images on hover */
+.rec1:hover img, .rec2:hover img {
+    opacity: 1;
+}
+
+/* Text inside cards */
+.bigtext-rec1, .bigtext-rec2 {
     margin-bottom: 30px;
     font-size: 2em;
 }
 
-.smalltext-rec1, .smalltext-rec2{
+.smalltext-rec1, .smalltext-rec2 {
     font-size: 1em;
 }
 
-.rec1-btn{
-    /* padding-bottom: 16px; */
+/* Buttons */
+.rec1-btn {
     margin-top: 180px;
 }
-.btn4{
+.btn4 {
     border: none;
     padding: 18px 30px;
     background-color: #CBEFFF;
     border-radius: 40px;
+    cursor: pointer;
 }
 
-.rec2-btn{
+.rec2-btn {
     margin-top: 200px;
 }
-.btn5{
+.btn5 {
     border: 1px solid #CBEFFF;
     padding: 18px 30px;
     background-color: #222875;
     border-radius: 40px;
-}
-
-.blue-recs{
-    margin-bottom: 32px;
-    display: flex;
-    align-items: center;
-    gap: 1em;
+    cursor: pointer;
 }
 
 .connect{
@@ -352,10 +500,12 @@ ul{
 
 .connect-big h2{
     font-size: 3.2em;
+    margin-top: 40px;
 }
 
 .connect-small p{
     font-size: 1.2em;
+    margin-top: 20px;
 }
 
 .btn6{
@@ -850,10 +1000,6 @@ ul{
     gap: 0.2em;
 }
 
-.socials{
-    
-}
-
 .socials .fa-brands{
     width: 36px;
     height: 36px;
@@ -880,9 +1026,6 @@ ul{
     border-bottom: 1px solid #FFEAEC;
 }
 
-.store {
-  
-}
 
 .download {
   display: flex;
@@ -896,3 +1039,457 @@ ul{
   width: auto;              
   flex-shrink: 0;        
 } 
+
+
+   /* --------------MEDIA QUERIES---------------- */
+
+   @media (max-width: 1117px) {
+    .leader-card {
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .leader-card-image {
+    width: 220px; 
+  }
+
+  .leader-card-text {
+    font-size: 0.9em;
+  }
+
+  .leader-card-link {
+    font-size: 0.85em;
+  }
+   }
+
+@media (max-width: 1032px) {
+    .menu-list-left,
+    .menu-list-right {
+        display: none; 
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #000;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 12px 5%;
+    }
+
+/* ------------------section 2----------------------- */
+    .companies {
+    flex-direction: row; 
+    gap: 20px;
+    padding-bottom: 60px;
+  }
+
+  .company-image {
+    width: 100px; 
+  }
+
+  .use-case {
+    font-size: 2em; 
+    text-align: center;
+  }
+
+  .cards-container {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .card {
+    width: 90% !important; 
+  }
+
+  .scroll-arrow {
+    justify-content: center; 
+    margin-top: 20px;
+  }
+
+
+
+  /* ----------------footer2------------ */
+
+  .footer2-menu {
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 1.2em;               
+    padding: 0 40px;          
+    font-size: 0.75em;        
+    text-align: center;
+  }
+
+  .social-media {
+    gap: 0.6em;               
+  }
+
+  .socials .fa-brands {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9em;
+    padding: 0;               
+  }
+
+  .download {
+    flex-wrap: wrap;          
+    gap: 0.8rem;
+  }
+
+  .store {
+    height: 35px;         
+  }
+}
+
+
+@media (max-width: 932px) {
+    /* -------------footer1------------ */
+  .support {
+    padding-top: 60px;
+    padding-right: 20px;
+    max-width: 100%;
+  }
+
+  .support-bold {
+    font-size: 2.4em;
+  }
+
+  .support-btn {
+    font-size: 1em;
+    padding: 14px 24px;
+  }
+
+  .support-small {
+    padding-top: 40px;
+    font-size: 0.75em;
+  }
+
+  .accordion {
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-between;
+  }
+
+  /* make the 3-dot menu take full width */
+  .footer-menu.logo-menu {
+    flex: 1 1 100%;
+    text-align: left; /* or center if you want */
+  }
+
+  /* other footer menus */
+  .footer-menu {
+    flex: 1 1 200px; /* each takes min 200px */
+  }
+
+  .footer-menu p {
+    font-size: 0.8em;
+  }
+
+  .footer-list p a {
+    font-size: 0.9em;
+  }
+  
+}
+
+@media (max-width: 876px) {
+    .companies {
+    flex-wrap: wrap;       
+    text-align: center;    
+  }
+
+  .companies h4 {
+    flex: 1 1 100%;    
+    margin-top: 20px;
+    margin-bottom: 20px;   
+    font-size: 1.2em;      
+  }
+
+  .company-image {
+    width: 100px;          
+    margin: 0 10px 15px;   
+  }
+
+  .get-started-left-right {
+    flex-direction: column;   /* stack instead of side by side */
+    align-items: center;      /* center contents */
+    padding: 60px 20px;       /* reduce padding for small screens */
+    gap: 2em;                 /* smaller gap */
+  }
+
+  .get-started-left h1 {
+    font-size: 2em;           /* reduce heading size */
+    text-align: center;       /* center text */
+  }
+
+  .get-started-left p {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .get-started-right {
+    width: 100%;              /* let right section take full width */
+    align-items: center;
+  }
+
+  .text-arrowright1,
+  .text-arrowright2,
+  .text-arrowright3 {
+    width: 100%;              /* take full width */
+    max-width: 500px;         /* but not too wide */
+  }
+
+  .demo {
+    font-size: 1.3em;
+    text-align: left;
+  }
+
+  .action {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  /* -------------section6-------------- */
+  .leader-card {
+    flex-wrap: wrap;         
+    justify-content: center;  /* centers the cards themselves */
+    gap: 1.5em;              
+  }
+
+  .leader-card-image {
+    width: 280px;            
+    margin: 0 auto;           /* keep images centered in their card */
+    display: block;
+  }
+
+  .leader-card-body {
+    text-align: center;       /* keeps text centered */
+    margin: 0 auto;           /* centers the card content */
+  }
+
+  .leader-card-link {
+    display: inline-block;    /* so links don’t stretch weirdly */
+    margin-top: 0.5em;
+  }
+
+  /* ------------section4----------------- */
+
+  .carousel-item .row {
+    flex-direction: column !important;
+  }
+
+  .carousel-img-text,
+  .comment,
+  .comment2,
+  .comment3,
+  .comment4 {
+    width: 100% !important;
+    max-width: 100%;
+  }
+
+  /* --------------section3------------ */
+
+  .blue-recs {
+    flex-direction: column;    /* stack vertically */
+    align-items: center;       /* center them horizontally */
+    gap: 2rem;                 /* space between the two cards */
+  }
+
+  .rec1, .rec2 {
+    width: 100%;               /* take full available width */
+    max-width: 500px;          /* optional limit so they don’t stretch too wide */
+    height: auto;              /* let height grow with content */
+    padding: 30px 20px;
+  }
+
+  /* disable hover expand on small screens */
+  .rec1:hover, .rec2:hover {
+    width: 100%;
+  }
+
+  /* make images always visible instead of hover */
+  .rec1-image, .rec2-image {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    opacity: 1;                  /* always show */
+    margin-top: 1.5rem;
+    right: auto;
+    bottom: auto;
+    display: block;
+  }
+
+  /* text scaling for smaller screens */
+  .bigtext-rec1, .bigtext-rec2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .smalltext-rec1, .smalltext-rec2 {
+    font-size: 0.95rem;
+  }
+
+  /* buttons centered */
+  .rec1-btn, .rec2-btn {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .btn4, .btn5 {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+    /*----------------- SECTION 1-------------- */
+    .hero-section {
+        width: 95%;
+    }
+
+    .big {
+        font-size: 1em;
+        padding-top: 100px;
+        margin-bottom: 20px;
+
+    }
+
+    .small {
+        font-size: 0.8em;
+        margin-bottom: 20px;
+    }
+
+    .big-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 30px;
+    }
+
+    .btn1,
+    .btn2 {
+        width: 80%;
+        font-size: 1em;
+        padding: 14px 0;
+    }
+
+    .ratio {
+        width: 100%;
+        height: auto;
+    }
+
+    video.object-fit-cover {
+        width: 100%;
+        height: auto;
+    }
+
+    .section-2 {
+        width: 95%;
+        padding-bottom: 60px;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .big{
+        font-size: 0.8em;
+    }
+    .small{
+        font-size: 0.6em;
+    }
+    .sets-h2{
+        font-size: 1.6em;
+    }
+    .connect-big h2{
+        font-size: 1.6em;
+    }
+    .connect-small p{
+        font-size: 1em;
+    }
+    .top-companies-big h2{
+        font-size: 1.6em;
+    }
+    .support-bold{
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+    .support-small{
+        font-size: 1em;
+    }
+    .footer-menu p{
+        font-size: 1.4em;
+    }
+    .footer-list p{
+        font-size: 1.2em;
+    }
+}
+
+
+@media (max-width: 480px) {
+  
+    nav {
+        padding: 8px 5%;
+    }
+
+    .hamburger {
+        font-size: 1.3em;
+    }
+
+   
+    .big {
+        font-size: 1em;
+        padding-top: 80px;
+    }
+
+    .small {
+        font-size: 0.8em;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    .btn1,
+    .btn2 {
+        width: 90%;
+        font-size: 0.9em;
+        padding: 12px 0;
+    }
+
+    
+    .use-case {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width:408px) {
+    .big{
+        font-size: 0.8em;
+        padding-top: 60px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .small{
+        font-size: 0.8em;
+    }
+    .scroll-arrow{
+        gap: 4em;
+    }
+}
+
+@media (max-width: 360px) {
+  .big-btn .btn-lg {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 390px) {
+    .big{
+        padding-top: 80px;
+    }
+}
