@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-.logo{
+.logo img{
     width: 120px;
     color: #690031;
 }
@@ -37,9 +37,13 @@ nav{
     gap: 1.6em;
 }
 
+.left-list ul li{
+    display: flex;
+}
+
 .dropdown-menu {
   position: fixed;
-  top: 46px;
+  top: 44px;
   left: 0;
   width: 100vw;
   display: flex;
@@ -48,6 +52,7 @@ nav{
   border: none;
   display: none;
   z-index: 999;
+  margin-top: 0;
 }
 
 /* show on hover */
@@ -60,12 +65,16 @@ nav{
 .dropdown-content {
   display: flex;
   gap: 3rem;
-  padding: 56px 5%;
+  padding: 40px 5%;
   flex: 1;
 }
 
-.dropdown-column.wide { flex: 1; }
-.dropdown-column { flex: 2; }
+.dropdown-column.wide {
+  flex: 1;
+ }
+.dropdown-column {
+  flex: 2; 
+}
 
 .dropdown-column .title {
   font-weight: 500;
@@ -88,10 +97,8 @@ nav{
 
 .dropdown-column ul li a:hover{
     background-color: #FAFAF9;
-    padding-top: 6px;
-    padding-bottom: 6px;
     padding-left: 0px;
-    padding-right: 14px;
+    padding-right: 16px;
     border-radius: 6px;
 }
 
@@ -158,9 +165,6 @@ nav{
 
 .dropdown-column2 ul li a:hover{
     background-color: #FAFAF9;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 0px;
     padding-right: 14px;
     border-radius: 6px;
 }
@@ -169,6 +173,10 @@ nav{
 a{
     text-decoration: none;
     color: #707070;
+}
+
+.right{
+    display: flex;
 }
 
 .menu-list-left, .menu-list-right{
@@ -217,6 +225,14 @@ ul{
 
 .hamburger{
     display: none;
+    margin-left: auto;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-left: auto;
+}
+
+#menu-toggle {
+  display: none;
 }
 
 
@@ -887,6 +903,7 @@ ul{
     width: 90%;
     margin: auto;
     color: #FFEAEC;
+    padding-bottom: 100px;
 }
 
 .support {
@@ -915,6 +932,10 @@ ul{
     font-size: 1.2em;
 }
 
+.support-btn:hover{
+    background-color: #D2A4B4;
+}
+
 .support-small{
     padding-top: 80px;
     font-size: 0.8em;
@@ -925,7 +946,7 @@ ul{
     border: 1px solid #781744;
 }
 
-.accordion{
+.footer-accordion{
     display: flex;
     /* align-items: center; */
     /* justify-content: center; */
@@ -1044,6 +1065,63 @@ ul{
    /* --------------MEDIA QUERIES---------------- */
 
    @media (max-width: 1117px) {
+    .menu-list-left,
+  .menu-list-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #menu-toggle:checked ~ .left .menu-list-left,
+  #menu-toggle:checked ~ .right .menu-list-right {
+    display: flex !important;
+    flex-direction: column;
+    /* position: absolute; */
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    gap: 1rem;
+    z-index: 1500;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+  }
+
+  /* Make links stretch */
+  .menu-list-left a,
+  .menu-list-right a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  .left .menu-list-left li,
+  .right .menu-list-right li {
+    width: 100%;
+  }
+
+
+  .login-link {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown .dropdown-menu { display: none !important; }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+
     .leader-card {
     flex-wrap: nowrap; 
     justify-content: space-between;
@@ -1064,9 +1142,17 @@ ul{
    }
 
 @media (max-width: 1032px) {
-    .menu-list-left,
-    .menu-list-right {
+
+    /* .menus{
         display: none; 
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 1rem;
     }
 
     .hamburger {
@@ -1074,12 +1160,24 @@ ul{
         font-size: 1.5em;
         cursor: pointer;
         color: #000;
+        z-index: 1001;
     }
 
     nav {
         justify-content: space-between;
         padding: 12px 5%;
     }
+
+    #menu-toggle:checked ~ .menus{
+    display: flex;
+    }
+
+    .menus ul{
+    margin: 0.8rem 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: left;
+  } */  
 
 /* ------------------section 2----------------------- */
     .companies {
@@ -1343,6 +1441,38 @@ ul{
 }
 
 @media (max-width: 768px) {
+    /* .right .menu-list-right{
+        display: none; 
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        color: #000;
+        z-index: 1001;
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 12px 5%;
+    }
+
+    #menu-toggle:checked ~ .right .menu-list-right {
+    display: flex;
+    flex-direction: column;
+    } */
+
+    
+
+
     /*----------------- SECTION 1-------------- */
     .hero-section {
         width: 95%;
