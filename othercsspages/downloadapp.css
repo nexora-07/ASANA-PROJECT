@@ -282,6 +282,10 @@ ul{
     font-size: 1.2em;
 }
 
+.desktop-btn:hover {
+    background-color: #6E6E6E;
+}
+
 .desktop-image{
     margin-top: 100px;
 }
