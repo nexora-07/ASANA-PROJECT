@@ -188,7 +188,7 @@ a{
     align-items: center;
     justify-content: center;
     gap: 1.6em;
-    display: none;
+    /* display: none; */
 }
 
 ul{
@@ -412,4 +412,69 @@ form input:hover{
     width: 100%;
     font-size: 0.8em;
     padding: 20px;
+}
+
+
+/* =======================media query================ */
+@media (max-width: 1090px) {
+.footer2-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        padding: 0 40px;
+    }
+    .socials .fa-brands{
+        width: 32px;
+        height: 32px;
+        font-size: 0.8em;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1011px) {
+
+    .section-1 form {
+    position: static;  
+    width: 100%;        
+    margin-top: 2rem;   
+  }
+
+  .talk {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+  }
+
+  .talk-text {
+    max-width: 100%;   
+    padding-top: 100px; 
+    padding-bottom: 20px;
+    text-align: center;    
+  }
+
+  .talk-text ul {
+    padding-left: 0;   
+  }
+
+  .skai {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+  }
+
+  .card {
+    width: 100%;      
+    margin-top: 50px;  
+    margin-bottom: 50px;
+  }
+
+  .sales-team {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;                           
+    justify-items: center;                
+  }
+
+  .sales-team img {
+    max-width: 120px; 
+  }
 }
