@@ -429,7 +429,7 @@ ul{
 .sets-h2 {
     color: #222875;
     font-size: 3.2em;
-    padding-bottom: 32px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
@@ -438,6 +438,7 @@ ul{
     display: flex;
     gap: 1em;
     justify-content: center;
+    align-items: center;
 }
 
 /* Cards */
@@ -447,7 +448,7 @@ ul{
     background-color: #222875;
     color: #CBEFFF;
     padding-top: 40px;
-    padding-left: 30px;
+    padding-left: 20px;
     border-radius: 16px;
     position: relative;
     overflow: hidden;
@@ -490,23 +491,21 @@ ul{
 .rec1-btn {
     margin-top: 180px;
 }
-.btn4 {
-    border: none;
+.rec-btn {
+    border: 1px solid #CBEFFF;
     padding: 18px 30px;
-    background-color: #CBEFFF;
+    background-color: #222875;
+    color: #CBEFFF;
     border-radius: 40px;
     cursor: pointer;
 }
 
+.rec-btn:hover{
+    background-color: #333C83;
+}
+
 .rec2-btn {
     margin-top: 200px;
-}
-.btn5 {
-    border: 1px solid #CBEFFF;
-    padding: 18px 30px;
-    background-color: #222875;
-    border-radius: 40px;
-    cursor: pointer;
 }
 
 .connect{
@@ -532,6 +531,11 @@ ul{
     border-radius: 40px;
     padding: 18px 30px;
     margin-top: 30px;
+}
+
+.btn6:hover{
+    background-color: #6E6E6E;
+    border: 1px solid #6E6E6E;
 }
 
 .logo-carousel {
@@ -612,6 +616,31 @@ ul{
 }
 
 
+.carousel-arrow{
+  display: flex;
+  justify-content: end;
+  /* gap: 10px; */
+}
+
+.carousel-arrow i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 1.4em;
+  cursor: pointer; /* optional: makes it clickable */
+}
+
+.carousel-arrow i:hover {
+    background-color: #6E6E6E;
+    border: #6E6E6E;
+}
+
 .carousel-indicators {
   position: static;       /* not absolute at bottom */
   margin-top: 1rem;       /* space above dots */
@@ -650,8 +679,7 @@ ul{
 }
 
 .tiny-legible{
-    border-top: thin solid #d3d3d3;
-    
+    border-top: thin solid #d3d3d3;   
 }
 
 .img-fluid{
@@ -1064,562 +1092,322 @@ ul{
 
    /* --------------MEDIA QUERIES---------------- */
 
-   @media (max-width: 1117px) {
-    .menu-list-left,
-  .menu-list-right {
-    display: none;
-  }
+@media (max-width: 1090px) {
 
-  .hamburger {
-    display: block;
-  }
-
-  #menu-toggle:checked ~ .left .menu-list-left,
-  #menu-toggle:checked ~ .right .menu-list-right {
-    display: flex !important;
-    flex-direction: column;
-    /* position: absolute; */
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    padding: 20px;
-    gap: 1rem;
-    z-index: 1500;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-    box-sizing: border-box;
-  }
-
-  /* Make links stretch */
-  .menu-list-left a,
-  .menu-list-right a {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    text-align: left;
-  }
-
-  .left .menu-list-left li,
-  .right .menu-list-right li {
-    width: 100%;
-  }
-
-
-  .login-link {
-    border: 1px solid #000;
-    padding: 10px;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-  }
-
-  .dropdown .dropdown-menu { display: none !important; }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
-  }
-
-
-    .leader-card {
-    flex-wrap: nowrap; 
-    justify-content: space-between;
-    gap: 1em;
-  }
-
-  .leader-card-image {
-    width: 220px; 
-  }
-
-  .leader-card-text {
-    font-size: 0.9em;
-  }
-
-  .leader-card-link {
-    font-size: 0.85em;
-  }
-   }
-
-@media (max-width: 1032px) {
-
-    /* .menus{
-        display: none; 
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 44px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        padding: 1rem;
+    /* =============section1========== */
+    .big{
+        font-size: 1.2em;
+        margin-bottom: 20px;
     }
-
-    .hamburger {
-        display: block;
-        font-size: 1.5em;
-        cursor: pointer;
-        color: #000;
-        z-index: 1001;
-    }
-
-    nav {
-        justify-content: space-between;
-        padding: 12px 5%;
-    }
-
-    #menu-toggle:checked ~ .menus{
-    display: flex;
-    }
-
-    .menus ul{
-    margin: 0.8rem 0;
-    width: 100%;
-    flex-direction: column;
-    text-align: left;
-  } */  
-
-/* ------------------section 2----------------------- */
-    .companies {
-    flex-direction: row; 
-    gap: 20px;
-    padding-bottom: 60px;
-  }
-
-  .company-image {
-    width: 100px; 
-  }
-
-  .use-case {
-    font-size: 2em; 
-    text-align: center;
-  }
-
-  .cards-container {
-    flex-direction: column; 
-    align-items: center;
-  }
-
-  .card {
-    width: 90% !important; 
-  }
-
-  .scroll-arrow {
-    justify-content: center; 
-    margin-top: 20px;
-  }
-
-
-
-  /* ----------------footer2------------ */
-
-  .footer2-menu {
-    flex-wrap: wrap;          
-    justify-content: center;  
-    gap: 1.2em;               
-    padding: 0 40px;          
-    font-size: 0.75em;        
-    text-align: center;
-  }
-
-  .social-media {
-    gap: 0.6em;               
-  }
-
-  .socials .fa-brands {
-    width: 32px;
-    height: 32px;
-    font-size: 0.9em;
-    padding: 0;               
-  }
-
-  .download {
-    flex-wrap: wrap;          
-    gap: 0.8rem;
-  }
-
-  .store {
-    height: 35px;         
-  }
-}
-
-
-@media (max-width: 932px) {
-    /* -------------footer1------------ */
-  .support {
-    padding-top: 60px;
-    padding-right: 20px;
-    max-width: 100%;
-  }
-
-  .support-bold {
-    font-size: 2.4em;
-  }
-
-  .support-btn {
-    font-size: 1em;
-    padding: 14px 24px;
-  }
-
-  .support-small {
-    padding-top: 40px;
-    font-size: 0.75em;
-  }
-
-  .accordion {
-    flex-wrap: wrap;
-    gap: 2em;
-    justify-content: space-between;
-  }
-
-  /* make the 3-dot menu take full width */
-  .footer-menu.logo-menu {
-    flex: 1 1 100%;
-    text-align: left; /* or center if you want */
-  }
-
-  /* other footer menus */
-  .footer-menu {
-    flex: 1 1 200px; /* each takes min 200px */
-  }
-
-  .footer-menu p {
-    font-size: 0.8em;
-  }
-
-  .footer-list p a {
-    font-size: 0.9em;
-  }
-  
-}
-
-@media (max-width: 876px) {
-    .companies {
-    flex-wrap: wrap;       
-    text-align: center;    
-  }
-
-  .companies h4 {
-    flex: 1 1 100%;    
-    margin-top: 20px;
-    margin-bottom: 20px;   
-    font-size: 1.2em;      
-  }
-
-  .company-image {
-    width: 100px;          
-    margin: 0 10px 15px;   
-  }
-
-  .get-started-left-right {
-    flex-direction: column;   /* stack instead of side by side */
-    align-items: center;      /* center contents */
-    padding: 60px 20px;       /* reduce padding for small screens */
-    gap: 2em;                 /* smaller gap */
-  }
-
-  .get-started-left h1 {
-    font-size: 2em;           /* reduce heading size */
-    text-align: center;       /* center text */
-  }
-
-  .get-started-left p {
-    font-size: 1em;
-    text-align: center;
-  }
-
-  .get-started-right {
-    width: 100%;              /* let right section take full width */
-    align-items: center;
-  }
-
-  .text-arrowright1,
-  .text-arrowright2,
-  .text-arrowright3 {
-    width: 100%;              /* take full width */
-    max-width: 500px;         /* but not too wide */
-  }
-
-  .demo {
-    font-size: 1.3em;
-    text-align: left;
-  }
-
-  .action {
-    font-size: 1em;
-    text-align: left;
-  }
-
-  /* -------------section6-------------- */
-  .leader-card {
-    flex-wrap: wrap;         
-    justify-content: center;  /* centers the cards themselves */
-    gap: 1.5em;              
-  }
-
-  .leader-card-image {
-    width: 280px;            
-    margin: 0 auto;           /* keep images centered in their card */
-    display: block;
-  }
-
-  .leader-card-body {
-    text-align: center;       /* keeps text centered */
-    margin: 0 auto;           /* centers the card content */
-  }
-
-  .leader-card-link {
-    display: inline-block;    /* so links don’t stretch weirdly */
-    margin-top: 0.5em;
-  }
-
-  /* ------------section4----------------- */
-
-  .carousel-item .row {
-    flex-direction: column !important;
-  }
-
-  .carousel-img-text,
-  .comment,
-  .comment2,
-  .comment3,
-  .comment4 {
-    width: 100% !important;
-    max-width: 100%;
-  }
-
-  /* --------------section3------------ */
-
-  .blue-recs {
-    flex-direction: column;    /* stack vertically */
-    align-items: center;       /* center them horizontally */
-    gap: 2rem;                 /* space between the two cards */
-  }
-
-  .rec1, .rec2 {
-    width: 100%;               /* take full available width */
-    max-width: 500px;          /* optional limit so they don’t stretch too wide */
-    height: auto;              /* let height grow with content */
-    padding: 30px 20px;
-  }
-
-  /* disable hover expand on small screens */
-  .rec1:hover, .rec2:hover {
-    width: 100%;
-  }
-
-  /* make images always visible instead of hover */
-  .rec1-image, .rec2-image {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    opacity: 1;                  /* always show */
-    margin-top: 1.5rem;
-    right: auto;
-    bottom: auto;
-    display: block;
-  }
-
-  /* text scaling for smaller screens */
-  .bigtext-rec1, .bigtext-rec2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-  }
-  .smalltext-rec1, .smalltext-rec2 {
-    font-size: 0.95rem;
-  }
-
-  /* buttons centered */
-  .rec1-btn, .rec2-btn {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-  .btn4, .btn5 {
-    width: 100%;
-    max-width: 260px;
-  }
-}
-
-@media (max-width: 768px) {
-    /* .right .menu-list-right{
-        display: none; 
-        flex-direction: column;
-        background: white;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        padding: 1rem;
-    }
-
-    .hamburger {
-        display: block;
-        font-size: 1.5em;
-        cursor: pointer;
-        color: #000;
-        z-index: 1001;
-    }
-
-    nav {
-        justify-content: space-between;
-        padding: 12px 5%;
-    }
-
-    #menu-toggle:checked ~ .right .menu-list-right {
-    display: flex;
-    flex-direction: column;
-    } */
-
-    
-
-
-    /*----------------- SECTION 1-------------- */
-    .hero-section {
-        width: 95%;
-    }
-
-    .big {
+    .small{
         font-size: 1em;
-        padding-top: 100px;
-        margin-bottom: 20px;
-
-    }
-
-    .small {
-        font-size: 0.8em;
-        margin-bottom: 20px;
-    }
-
-    .big-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
         margin-bottom: 30px;
     }
 
-    .btn1,
-    .btn2 {
-        width: 80%;
-        font-size: 1em;
-        padding: 14px 0;
+        /* ===section2== */
+    .use-case{
+        font-size: 2.6em;
+        text-align: center;
+    }
+    .scroll-arrow{
+        display: none;
     }
 
-    .ratio {
-        width: 100%;
-        height: auto;
+    .cards-container {
+    flex-direction: column;
+    align-items: center; 
+    gap: 1.2em; 
     }
 
-    video.object-fit-cover {
-        width: 100%;
-        height: auto;
+  .card {
+    width: 100%;              
+    max-width: 18rem;         
+    text-align: center;       
     }
 
-    .section-2 {
-        width: 95%;
-        padding-bottom: 60px;
+  .card-title,
+  .card-text,
+  .card-link {
+    text-align: center;       
     }
     
-}
+    .card-link{
+        font-size: 0.88em;
+    }
 
-@media (max-width: 500px) {
-    .big{
+  .card-img-top {
+    margin: 0 auto;           
+    display: block;
+    }
+    .companies{
+       flex-wrap: wrap; 
+       padding-bottom: 80px;
+    }
+
+    /* =========section3======== */
+    .sets-h2{
+        font-size: 2.8em;
+        padding-bottom: 32px;
+    }
+
+    /* =========section4======== */
+    .connect-big h2{
+        font-size: 2.8em;
+        margin-top: 100px;
+    }
+    .top-companies-big h2{
+        font-size: 2.8em;
+        padding-top: 60px;
+    }
+
+    /* ===========section5============ */
+    .get-started-left h1{
+        font-size: 2.6em;
+    }
+    
+    /* ============footer1=========== */
+    .support-bold{
+        font-size: 2.8em;
+        margin-bottom: 20px;
+    }
+    .support-small{
+        font-size: 1.2em;
+    }
+    /* ==========footer2========= */
+    .footer2-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        padding: 0 40px;
+    }
+    .socials .fa-brands{
+        width: 32px;
+        height: 32px;
+        font-size: 0.8em;
+        padding: 0;
+    }
+    
+
+        /* ===========section6====== */
+    .leader-card-image{
+        width: 220px;
+    }
+
+    .leader-card-text{
+        font-size: 1em;
+    }
+
+    .leader-card-link{
         font-size: 0.8em;
     }
-    .small{
-        font-size: 0.6em;
+
+
+
+    
+
+}
+
+@media (max-width: 990px) {
+    /* =========section4========== */
+    .carousel-item .row {
+    flex-direction: column;
+  }
+
+  .img-fluid {
+    margin-bottom: 60px;
+  }
+  .tiny-legible{
+    display: none;
+  }
+  .carousel-img-text img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .comment3{
+    text-align: left;
+  }
+
+}
+
+@media (max-width: 930px) {
+    /* =============section5======== */
+     .get-started-left h1 {
+        text-align: center;
+    }
+    .get-started-left-right{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 20px;
+    }
+    .get-started-left p{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .get-started-right{
+        width: 100%;
+        align-items: center;
+    }
+    .text-arrowright1,
+    .text-arrowright2,
+    .text-arrowright3 {
+        width: 100%; 
+        max-width: 500px;
+    }
+    .demo{
+        font-size: 1.4em;
+        text-align: left;
+    }
+    .action{
+        font-size: 1em;
+        text-align: left;
+    }
+    /* ==============footer1=========== */
+    .footer-accordion{
+        flex-wrap: wrap;
+    }
+    .footer-menu{
+        width: 140px;
+    }
+    .footer-menu p{
+        font-size: 1.2em;
+    }
+    .footer-list p a{
+        font-size: 1em;
+    }
+    .footer-list{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 895px) {
+    .btn1,.btn2{
+        width: 100%;
+    }
+    .blue-recs{
+        flex-direction: column;
+        gap: 2em;
+        
+    }
+    .rec1, .rec2{
+        width: 94%;
+    }
+    .rec1:hover, .rec2:hover{
+        width: 94%;
+    }
+    .rec1-image, .rec2-image{
+        opacity: 1;
+        width: 100%;
+        top: 350px;
+    }
+    .rec1-btn, .rec2-btn{
+        /* text-align: end; */
+        margin-top: 0;
+    }
+    .rec-btn{
+        padding: 10px 12px;
+    }
+    .bigtext-rec1{
+        font-size: 1.2em;
+    }
+    .smalltext-rec1{
+        font-size:1em;
+    }
+    .bigtext-rec2{
+        font-size: 1.2em;
+    }
+    .smalltext-rec2{
+        font-size:1em;
+    }
+}
+
+@media (max-width: 750px) {
+    .companies h4{
+    margin-top: 60px;
+    font-size: 1em;
+    }
+    .company-image{
+        width: 120px;
+    }
+    .use-case{
+        font-size: 1.6em;
     }
     .sets-h2{
         font-size: 1.6em;
     }
-    .connect-big h2{
-        font-size: 1.6em;
+    .top-companies-big h2{
+        font-size: 1.4em;
     }
-    .connect-small p{
+
+    .leader-card {
+    flex-direction: column;  
+    align-items: center;
+    gap: 1.5em;              
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    right: 30px;
+  }
+
+  .leader-card-image {
+    width: 100%; 
+    min-width: 350px;
+    height: auto;
+  }
+
+  .leader-card-text {
+    font-size: 1em;           
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .leader-card-link {
+    display: block;
+    text-align: center;
+    font-size: 0.95em;
+    margin-top: 5px;
+  }
+
+  .leader-card-body {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 542px) {
+    .big{
         font-size: 1em;
     }
+    .sets-h2{
+        font-size: 2.2em;
+    }
+    .connect-big h2{
+        font-size: 2.2em;
+        margin-top: 60px;
+    }
     .top-companies-big h2{
-        font-size: 1.6em;
+        font-size: 2.2em;
+        padding-top: 40px;
+    }
+    .get-started-left h1{
+        font-size: 2.2em;
     }
     .support-bold{
-        font-size: 1.6em;
-        margin-bottom: 10px;
+        font-size: 2.2em;
+        margin-bottom: 20px;
     }
     .support-small{
         font-size: 1em;
     }
-    .footer-menu p{
-        font-size: 1.4em;
+    .logo-track{
+        gap: 10px;
     }
-    .footer-list p{
-        font-size: 1.2em;
+    .logo-card{
+        width: 220px;
+        height: 100px;
     }
-}
-
-
-@media (max-width: 480px) {
-  
-    nav {
-        padding: 8px 5%;
+    .logo-row:nth-child(2) .logo-track {
+        animation-delay: -36s;
     }
-
-    .hamburger {
-        font-size: 1.3em;
-    }
-
-   
-    .big {
-        font-size: 1em;
-        padding-top: 80px;
-    }
-
-    .small {
-        font-size: 0.8em;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     
-    .btn1,
-    .btn2 {
-        width: 90%;
-        font-size: 0.9em;
-        padding: 12px 0;
-    }
-
-    
-    .use-case {
-        font-size: 1.5em;
-    }
-
-}
-
-@media (max-width:408px) {
-    .big{
-        font-size: 0.8em;
-        padding-top: 60px;
-        margin-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .small{
-        font-size: 0.8em;
-    }
-    .scroll-arrow{
-        gap: 4em;
-    }
-}
-
-@media (max-width: 360px) {
-  .big-btn .btn-lg {
-    font-size: 0.95rem;
-    padding: 10px 14px;
-    max-width: 320px;
-  }
-}
-
-@media (max-width: 390px) {
-    .big{
-        padding-top: 80px;
-    }
 }

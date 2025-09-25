@@ -287,6 +287,7 @@ ul{
     padding: 18px 36px;
     border-radius: 40px;
     font-size: 1.2em;
+    margin-top: 30px;
 }
 
 .summer-btn2:hover{
@@ -627,3 +628,193 @@ ul{
   width: auto;              
   flex-shrink: 0;        
 } 
+
+/* =================media query============== */
+@media (max-width: 1090px) {
+    /* ============section1======= */
+    .summer-text h1{
+        font-size: 3em;
+    }
+    .summer-text p{
+        font-size: 1em;
+    }
+    /* ==================section2=============== */
+    .ai-grid {
+    grid-template-columns: 1fr;  
+    gap: 2em;
+    text-align: center;          
+  }
+
+  .ai-grid img {
+    width: 100%;                  
+    max-width: 500px;
+    margin: 0 auto;               
+    display: block;
+  }
+
+  .ai-grid ul {
+    padding: 0;
+  }
+
+  .ai-grid ul li {
+    font-size: 1.4em;
+    padding: 20px;
+  }
+  .ai-grid h3{
+    font-size: 3em;
+  }
+
+  /* ================section3============ */
+  .amplify{
+    padding-bottom: 60px;
+  }
+  .amplify-text-image {
+    flex-direction: column;   
+    text-align: center;       
+  }
+
+  .amplify-text {
+    padding-top: 40px;
+    max-width: 100%;        
+  }        
+
+  .amplify-text h1 {
+    font-size: 2.2em;         
+  }
+
+  .amplify-text p {
+    font-size: 1.1em;
+  }
+
+  .amplify-image img {
+    width: 100%;              
+    max-width: 400px;         
+  }
+
+  .amplify-btn {
+    font-size: 1.1em;
+    padding: 14px 28px;
+  }
+
+  /* ======footer1========== */
+  .accelerate h1{
+    font-size: 2em;
+  }
+    /* ==========footer2========= */
+    .footer2-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+        padding: 0 40px;
+    }
+    .socials .fa-brands{
+        width: 32px;
+        height: 32px;
+        font-size: 0.8em;
+        padding: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    /* ===============section2========== */
+    .three-grid {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    text-align: center;       
+  }
+
+  .summer-grid h3 {
+    font-size: 1.4em;         
+  }
+
+  .summer-grid p {
+    font-size: 1.1em;
+  }
+
+  /* =======section4============ */
+  .cards-container {
+    flex-wrap: wrap;          
+    justify-content: start;   
+    gap: 2em;
+  }
+
+  .card {
+    margin-bottom: 60px;       
+  }
+}
+
+@media (max-width: 930px) {
+
+
+    /* ==============footer1=========== */
+    .footer-accordion{
+        flex-wrap: wrap;
+    }
+    .footer-menu{
+        width: 140px;
+    }
+    .footer-menu p{
+        font-size: 1.2em;
+    }
+    .footer-list p a{
+        font-size: 1em;
+    }
+    .footer-list{
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .summer-text h1{
+        font-size: 2em;
+    }
+    .summer-text p{
+        font-size: 0.8em;
+    }
+    .full{
+        width: 100%;
+    }
+    .summer-btn1, .summer-btn2{
+        font-size: 0.8em;
+    }
+    .object-fit-cover{
+        width: 100%;
+    }
+    .summer-grid h3{
+        font-size: 1.2em;
+    }
+    .summer-grid p{
+        font-size: 0.8em;
+    }
+    .ai-grid ul li h3{
+        font-size: 1.2em;
+    }
+    .ai-grid ul li{
+        font-size: 1em;
+    }
+    .accelerate h2{
+        font-size: 1em;
+    }
+    .accelerate-btn{
+        margin-top: 10px;
+    }
+  .cards-container {
+    flex-direction: column;    
+    align-items: center;       
+    gap: 1.5em;
+  }
+
+  .card {
+    width: 100% !important;    
+    max-width: 22rem;          
+    margin-bottom: 40px;
+  }
+
+  .card-title {
+    font-size: 1.2em;        
+  }
+
+  .card-text {
+    font-size: 1em;
+  }
+}
