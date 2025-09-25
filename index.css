@@ -98,7 +98,7 @@ nav{
 }
 
 .dropdown-column ul li a:hover{
-    background-color: #FAFAF9;
+    background-color: #e0e0df;
     padding-left: 0px;
     padding-right: 16px;
     border-radius: 6px;
@@ -167,7 +167,7 @@ nav{
 }
 
 .dropdown-column2 ul li a:hover{
-    background-color: #FAFAF9;
+    background-color: #e0e0df;
     padding-right: 14px;
     border-radius: 6px;
 }
