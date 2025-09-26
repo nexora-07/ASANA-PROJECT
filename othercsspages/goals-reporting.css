@@ -1370,5 +1370,27 @@ ul{
   .target-small {
     font-size: 0.9em;
   }
+  /* ==============footer1=========== */
+    .footer-accordion{
+        flex-wrap: wrap;
+    }
+    .footer-menu{
+        width: 140px;
+    }
+    .footer-menu p{
+        font-size: 1em;
+    }
+    .footer-list p a{
+        font-size: 0.8em;
+    }
+    .footer-list{
+        padding-bottom: 40px;
+    }
+    .support-bold{
+        font-size: 1.6em;
+    }
+    .support-small{
+        font-size: 0.8em;
+    }
   
 }

@@ -1,775 +1,1174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>goals-reporting</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language" />
-    <link rel="stylesheet" href="../othercsspages/goals-reporting.css">
-    <link rel="shortcut icon" href="../IMAGES/asana 3 dot original.png" type="image/x-icon">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=language"
+    />
+    <link rel="stylesheet" href="../othercsspages/goals-reporting.css" />
+    <link
+      rel="shortcut icon"
+      href="../IMAGES/asana 3 dot original.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <div class="logo">
+            <img src="../IMAGES/asana logo 2.png" alt="image" />
+          </div>
+        </div>
 
-  <header>
-        <nav>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </label>
 
-          
-            <div class="left">
-                <div class="logo">
-                    <img src="../IMAGES/asana logo 2.png" alt="image">
-                </div>
-
-                </div>
-                
-
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="hamburger">
-                  <i class="fa-solid fa-bars"></i>
-                </label>
-                
-
-                    
-    
-
-             <div class="mobile-menu">
-
-              <ul class="menu-list-left">  
-                    <li class="dropdown">
-                      <a href="" class="text-icon">Product <i class="fa-solid fa-chevron-down"></i></a>
-                      <div class="dropdown-menu">
-
-                        <!-- main dropdown content -->
-                         <div class="dropdown-content">
-
-                          <div class="dropdown-column wide">
-                            <p class="title">Platform</p>
-                            <ul>
-                              <li><a href="">Product overview</a></li>
-                              <li><a href="">Asana AI</a></li>
-                              <li><a href="">All features</a></li>
-                              <li><a href="./latest-feature.html">Latest feature release</a></li>
-                            </ul>
-                          </div>
-
-                          <div class="dropdown-column">
-                            <p class="title">Capabilities</p>
-                            <ul>
-                              <li><a href="">AI Studio</a></li>
-                              <li><a href="./goals-reporting.html">Goals and reporting</a></li>
-                              <li><a href="">Resource management</a></li>
-                              <li><a href="">App integrations</a></li>
-                            </ul>
-                          </div>
-                          
-                          <div class="dropdown-column highlight">
-                            <p class="title">All Plans</p>
-                            <ul>
-                              <li><a href="">Project management</a></li>
-                              <li><a href="">Workflows and automation</a></li>
-                              <li><a href="">Admin and security</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-                        <!-- footer row -->
-                         <div class="nav-dropdown-footer">
-                          <ul>
-                            <li><a href="./contactsales.html">Contact sales</a></li>
-                            <li><a href="" class="nav-dropdown-footer-border-left">View demo</a></li>
-                            <li><a href="./downloadapp.html" class="nav-dropdown-footer-border-left2">Download app</a></li>
-                          </ul>
-                        </div>
-                      
-                      </div>
-                    </li>
-
-                    <li class="dropdown"><a href="" class="text-icon">Solutions <i class="fa-solid fa-chevron-down"></i></a>
-                      <div class="dropdown-menu">
-
-                        <!-- main dropdown content -->
-                         <div class="dropdown-content">
-
-                          <div class="dropdown-column2">
-                            <p class="title">COMPANY TYPE</p>
-                            <ul>
-                              <li><a href="">Enterprise</a></li>
-                              <li><a href="">Small business</a></li>
-                              <li><a href="">Non-profit</a></li>
-                            </ul>
-                          </div>
-
-                          <div class="dropdown-column2">
-                            <p class="title">TEAMS</p>
-                            <ul>
-                              <li><a href="">Operations</a></li>
-                              <li><a href="">Marketing</a></li>
-                              <li><a href="">IT</a></li>
-                              <li><a href="">leaders</a></li>
-                            </ul>
-                          </div>
-                          
-                          <div class="dropdown-column2">
-                            <p class="title">INDUSTRIES</p>
-                            <ul>
-                              <li><a href="">Healthcare</a></li>
-                              <li><a href="">Retail</a></li>
-                              <li><a href="">Financial services</a></li>
-                              <li><a href="">Education</a></li>
-                              <li><a href="">Manufacturing</a></li>
-                            </ul>
-                          </div>
-
-                          <div class="dropdown-column2 highlight">
-                            <p class="title">USE CASES</p>
-                            <ul>
-                              <li><a href="">Goal management</a></li>
-                              <li><a href="">Organzational planning</a></li>
-                              <li><a href="">Project intake</a></li>
-                              <li><a href="">Resource planning</a></li>
-                              <li><a href="">Product launches</a></li>
-                              <li><a href="">View all use cases</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-                        <!-- footer row -->
-                         <div class="nav-dropdown-footer">
-                          <ul>
-                            <li><a href="./contactsales.html">Contact sales</a></li>
-                            <li><a href="" class="nav-dropdown-footer-border-left">View demo</a></li>
-                            <li><a href="./downloadapp.html" class="nav-dropdown-footer-border-left2">Download app</a></li>
-                          </ul>
-                        </div>
-                      
-                      </div>
-                    </li>
-
-                    <li class="dropdown"><a href="" class="text-icon">Resources <i class="fa-solid fa-chevron-down"></i></a>
-                      <div class="dropdown-menu">
-
-                        <!-- main dropdown content -->
-                         <div class="dropdown-content">
-
-                          <div class="dropdown-column2">
-                            <p class="title">LEARN</p>
-                            <ul>
-                              <li><a href="">Help Center</a></li>
-                              <li><a href="">Asana Academy</a></li>
-                              <li><a href="">Certifications</a></li>
-                              <li><a href="">Forums</a></li>
-                            </ul>
-                          </div>
-
-                          <div class="dropdown-column2">
-                            <p class="title">DISCOVER</p>
-                            <ul>
-                              <li><a href="">Work management hub </a></li>
-                              <li><a href="">Customer stories</a></li>
-                              <li><a href="">Events</a></li>
-                            </ul>
-                          </div>
-                          
-                          <div class="dropdown-column2">
-                            <p class="title">SUPPORT & SERVICES</p>
-                            <ul>
-                              <li><a href="">Get support</a></li>
-                              <li><a href="">Developer support</a></li>
-                              <li><a href="">Partners</a></li>
-                              <li><a href="">Customer Success</a></li>
-                            </ul>
-                          </div>
-
-                          <div class="dropdown-column2 highlight">
-                            <p class="title">TEMPLATES</p>
-                            <ul>
-                              <li><a href="">Project plans</a></li>
-                              <li><a href="">Team goals & objectives</a></li>
-                              <li><a href="">Team continuity</a></li>
-                              <li><a href="">Meeting agenda</a></li>
-                              <li><a href="">View all templates</a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        
-                        <!-- footer row -->
-                         <div class="nav-dropdown-footer">
-                          <ul>
-                            <li><a href="./contactsales.html">Contact sales</a></li>
-                            <li><a href="" class="nav-dropdown-footer-border-left">View demo</a></li>
-                            <li><a href="./downloadapp.html" class="nav-dropdown-footer-border-left2">Download app</a></li>
-                          </ul>
-                        </div>
-                      
-                      </div>
-                    </li>
-                    <li><a href="" class="text-icon">Pricing</a></li>
+        <div class="mobile-menu">
+          <ul class="menu-list-left">
+            <li class="dropdown">
+              <a href="" class="text-icon"
+                >Product <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-menu">
+                <!-- main dropdown content -->
+                <div class="dropdown-content">
+                  <div class="dropdown-column wide">
+                    <p class="title">Platform</p>
+                    <ul>
+                      <li><a href="">Product overview</a></li>
+                      <li><a href="">Asana AI</a></li>
+                      <li><a href="">All features</a></li>
+                      <li>
+                        <a href="./latest-feature.html"
+                          >Latest feature release</a
+                        >
+                      </li>
                     </ul>
+                  </div>
 
-                    <ul class="menu-list-right">
-                    <li><a href="" class="text-icon"><span class="material-symbols-outlined">language</span></a></li>
-                    <li><a href="" class="text-icon" style="border-left: 1px solid #ccc; padding: 4px;"></a></li>
-                    <li><a href="./contactsales.html" class="text-icon">Contact sales</a></li>
-                    <li><a href="" class="login-link">Log In</a></li>
-                    <button type="button" class="btn btn-lg btn-dark">Get started</button>
-                </ul>
+                  <div class="dropdown-column">
+                    <p class="title">Capabilities</p>
+                    <ul>
+                      <li><a href="">AI Studio</a></li>
+                      <li>
+                        <a href="./goals-reporting.html">Goals and reporting</a>
+                      </li>
+                      <li><a href="">Resource management</a></li>
+                      <li><a href="">App integrations</a></li>
+                    </ul>
+                  </div>
 
+                  <div class="dropdown-column highlight">
+                    <p class="title">All Plans</p>
+                    <ul>
+                      <li><a href="">Project management</a></li>
+                      <li><a href="">Workflows and automation</a></li>
+                      <li><a href="">Admin and security</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-             </div>
+                <!-- footer row -->
+                <div class="nav-dropdown-footer">
+                  <ul>
+                    <li><a href="./contactsales.html">Contact sales</a></li>
+                    <li>
+                      <a href="" class="nav-dropdown-footer-border-left"
+                        >View demo</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./downloadapp.html"
+                        class="nav-dropdown-footer-border-left2"
+                        >Download app</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
 
+            <li class="dropdown">
+              <a href="" class="text-icon"
+                >Solutions <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-menu">
+                <!-- main dropdown content -->
+                <div class="dropdown-content">
+                  <div class="dropdown-column2">
+                    <p class="title">COMPANY TYPE</p>
+                    <ul>
+                      <li><a href="">Enterprise</a></li>
+                      <li><a href="">Small business</a></li>
+                      <li><a href="">Non-profit</a></li>
+                    </ul>
+                  </div>
 
-        </nav>
+                  <div class="dropdown-column2">
+                    <p class="title">TEAMS</p>
+                    <ul>
+                      <li><a href="">Operations</a></li>
+                      <li><a href="">Marketing</a></li>
+                      <li><a href="">IT</a></li>
+                      <li><a href="">leaders</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown-column2">
+                    <p class="title">INDUSTRIES</p>
+                    <ul>
+                      <li><a href="">Healthcare</a></li>
+                      <li><a href="">Retail</a></li>
+                      <li><a href="">Financial services</a></li>
+                      <li><a href="">Education</a></li>
+                      <li><a href="">Manufacturing</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown-column2 highlight">
+                    <p class="title">USE CASES</p>
+                    <ul>
+                      <li><a href="">Goal management</a></li>
+                      <li><a href="">Organzational planning</a></li>
+                      <li><a href="">Project intake</a></li>
+                      <li><a href="">Resource planning</a></li>
+                      <li><a href="">Product launches</a></li>
+                      <li><a href="">View all use cases</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- footer row -->
+                <div class="nav-dropdown-footer">
+                  <ul>
+                    <li><a href="./contactsales.html">Contact sales</a></li>
+                    <li>
+                      <a href="" class="nav-dropdown-footer-border-left"
+                        >View demo</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./downloadapp.html"
+                        class="nav-dropdown-footer-border-left2"
+                        >Download app</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <li class="dropdown">
+              <a href="" class="text-icon"
+                >Resources <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <div class="dropdown-menu">
+                <!-- main dropdown content -->
+                <div class="dropdown-content">
+                  <div class="dropdown-column2">
+                    <p class="title">LEARN</p>
+                    <ul>
+                      <li><a href="">Help Center</a></li>
+                      <li><a href="">Asana Academy</a></li>
+                      <li><a href="">Certifications</a></li>
+                      <li><a href="">Forums</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown-column2">
+                    <p class="title">DISCOVER</p>
+                    <ul>
+                      <li><a href="">Work management hub </a></li>
+                      <li><a href="">Customer stories</a></li>
+                      <li><a href="">Events</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown-column2">
+                    <p class="title">SUPPORT & SERVICES</p>
+                    <ul>
+                      <li><a href="">Get support</a></li>
+                      <li><a href="">Developer support</a></li>
+                      <li><a href="">Partners</a></li>
+                      <li><a href="">Customer Success</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="dropdown-column2 highlight">
+                    <p class="title">TEMPLATES</p>
+                    <ul>
+                      <li><a href="">Project plans</a></li>
+                      <li><a href="">Team goals & objectives</a></li>
+                      <li><a href="">Team continuity</a></li>
+                      <li><a href="">Meeting agenda</a></li>
+                      <li><a href="">View all templates</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- footer row -->
+                <div class="nav-dropdown-footer">
+                  <ul>
+                    <li><a href="./contactsales.html">Contact sales</a></li>
+                    <li>
+                      <a href="" class="nav-dropdown-footer-border-left"
+                        >View demo</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./downloadapp.html"
+                        class="nav-dropdown-footer-border-left2"
+                        >Download app</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li><a href="" class="text-icon">Pricing</a></li>
+          </ul>
+
+          <ul class="menu-list-right">
+            <li>
+              <a href="" class="text-icon"
+                ><span class="material-symbols-outlined">language</span></a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="text-icon"
+                style="border-left: 1px solid #ccc; padding: 4px"
+              ></a>
+            </li>
+            <li>
+              <a href="./contactsales.html" class="text-icon">Contact sales</a>
+            </li>
+            <li><a href="" class="login-link">Log In</a></li>
+            <button type="button" class="btn btn-lg btn-dark">
+              Get started
+            </button>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <section class="section-1">
-    <div class="hero-section">
+      <div class="hero-section">
         <div class="main-text">
-            <h1><p class="big">Goals and reporting</p></h1>
-            <p class="small">
-                Connect every team's work to company objectives, then track progress with real- <br>time data.
-            </p>
-            <div class="big-btn">
-                <button type="button" class="btn1 btn-lg full">Get started</button>
-                <button type="button" class="btn2 btn-lg full">Contact Sales</button>
-            </div>
+          <h1><p class="big">Goals and reporting</p></h1>
+          <p class="small">
+            Connect every team's work to company objectives, then track progress
+            with real- <br />time data.
+          </p>
+          <div class="big-btn">
+            <button type="button" class="btn1 btn-lg full">Get started</button>
+            <button type="button" class="btn2 btn-lg full">
+              Contact Sales
+            </button>
+          </div>
         </div>
 
         <div class="align-strategy-red">
-
-            <div class="big-btn2">
-            <button type="button" class="btn1 btn-lg full">Drive strategy</button>
+          <div class="big-btn2">
+            <button type="button" class="btn1 btn-lg full">
+              Drive strategy
+            </button>
             <button type="button" class="btn2 btn-lg full">Get results</button>
+          </div>
+
+          <div class="align-strategy-image-text">
+            <div class="align-strategy-image">
+              <img src="../IMAGES/align-strategy-image.png" alt="image" />
+            </div>
+            <div class="align-strategy-text">
+              <h2>Align strategy to execution, at every level</h2>
+              <p>
+                Track goals and the work that supports them, all in one place.
+                See how every initiative furthers company objectives, so teams
+                stay focused on what matters.
+              </p>
+              <div class="lower-text">
+                <span class="features">Features</span>
+                <span>Goals <i class="fa-solid fa-chevron-right"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <div class="carol">
+        <div class="carousel-item active mt-3">
+          <div class="row both d-flex align-items-stretch text-md-start g-0">
+            <!-- Left side (image + caption) -->
+            <div class="carousel-img-text col-lg-4 mb-3 mb-md-0">
+              <img
+                src="../IMAGES/xero-img.svg"
+                class="img-fluid mx-auto"
+                alt="Slide 1 image"
+              />
+
+              <div class="tiny-legible mt-5">
+                <p class="tiny mt-2">Company Size</p>
+                <p class="legible">Enterprise</p>
+                <p class="tiny">Industry</p>
+                <p class="legible">Technology</p>
+              </div>
+            </div>
+            <!-- Right side (4 bold lines) -->
+            <div class="comment col-lg-8 d-flex flex-column fw-bold">
+              <p class="comment-legible">
+                <span class="fs-1">"</span>At a large enterprise company like
+                Xero, communicating goals can be tough. Instead of tracking
+                objectives in hard-to-find spreadsheets, Xero uses Asana to
+                monitor and share goals across their global team. This lets
+                everyone see how each regional priority ladders up into their
+                overarching strategy.
+              </p>
+              <p class="comment-tiny-bold mt-4 mb-0">Tony Ward</p>
+              <p>President, The Americas, Xero</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-3">
+      <div class="target-bg">
+        <div class="target">
+          <h1 class="target-bold">Stay on target with these features</h1>
+          <p class="target-small">
+            Keep teams aligned to company priorities, so everyone is headed in
+            the right direction. With shared goals and real-time data, you can
+            index on results and course-correct when needed.
+          </p>
+        </div>
+
+        <div class="container">
+          <div class="card" style="width: 22rem">
+            <!-- <img src="" class="card-img-top" alt="img"> -->
+            <div class="card-body">
+              <h5 class="card-title">Goals</h5>
+              <p class="card-text">
+                Connect every team’s work to company-wide objectives.
+              </p>
+              <a href="#" class="card-link"
+                >See goals <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 22rem">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">Reporting dashboards</h5>
+              <p class="card-text">
+                Visualize the state of your team’s work with real-time charts
+                and insights.
+              </p>
+              <a href="#" class="card-link"
+                >See reporting dashboards <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 22rem">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <h5 class="card-title">Portfolios</h5>
+              <p class="card-text">
+                Your mission control center to monitor connected projects and
+                collaborate across teams.
+              </p>
+              <a href="#" class="card-link"
+                >See portfolios <i class="fa-solid fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <div class="grid-section">
+        <div class="grid-image-text">
+          <div class="grid-image">
+            <img src="../IMAGES/grid-image-1.png" alt="" />
+          </div>
+          <div class="grid-text">
+            <p>SOLUTIONS PARTNER PROGRAM</p>
+            <h1>Amplify your impact with Asana AI</h1>
+            <p>
+              Work smarter and faster with a suite of AI teammates that maximize
+              efficiency at every level–and adapt over time to support your
+              evolving needs.
+            </p>
+            <button type="button" class="grid-btn btn-lg">Meet Asana AI</button>
+          </div>
+        </div>
+
+        <div class="grid-image-text">
+          <div class="grid-image">
+            <img src="../IMAGES/grid-image 2.png" alt="" class="grid-image2" />
+          </div>
+          <div class="grid-text">
+            <h1>Asana AI Studio</h1>
+            <p>Design AI-powered workflows to handle your teams' busywork.</p>
+            <button type="button" class="grid-btn btn-lg">Learn more</button>
+          </div>
+        </div>
+
+        <div class="sync">
+          <div class="sync-text-image">
+            <div class="sync-text">
+              <p>APP INTEGRAIONS</p>
+              <h1>Sync data across tools</h1>
+              <p>
+                No more back-and-forth. Asana integrates with 270+ apps, so the
+                information you need is always at your fingertips.
+              </p>
+              <button type="button" class="grid-btn btn-lg">
+                Explore apps
+              </button>
             </div>
 
-            <div class="align-strategy-image-text">
-                <div class="align-strategy-image">
-                    <img src="../IMAGES/align-strategy-image.png" alt="image">
+            <div class="sync-image">
+              <div class="sync-image-left">
+                <div class="sync-image-box">
+                  <img src="../IMAGES/imgi_7_Salesforce.svg" alt="image" />
+                  Salesforce
+                  <span class="sync-btn"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
                 </div>
-                <div class="align-strategy-text">
-                    <h2>Align strategy to execution, at every level</h2>
-                    <p>Track goals and the work that supports them, all in one place. See how every initiative furthers company objectives, so teams stay focused on what matters.</p>
-                    <div class="lower-text">
-                    <span class="features">Features</span>
-                    <span>Goals <i class="fa-solid fa-chevron-right"></i></span>
-                    </div>
+
+                <div class="sync-image-box">
+                  <img src="../IMAGES/tableau.svg" alt="image" /> Tableau
+                  <span class="sync-btn"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
                 </div>
+
+                <div class="sync-image-box">
+                  <img src="../IMAGES/Looker.svg" alt="image" />Looker
+                  <span class="sync-btn"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </div>
+              </div>
+
+              <div class="sync-image-right">
+                <div class="sync-image-box">
+                  <img src="../IMAGES/Power Bi.svg" alt="image" /> PowerBI
+                  <span class="sync-btn"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </div>
+
+                <div class="sync-image-box">
+                  <img src="../IMAGES/Google Sheets.svg" alt="image" /> Google
+                  Sheets
+                  <span class="sync-btn"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </div>
+              </div>
             </div>
-
-        </div>
-
-    </div>
-</section>
-
-<section class="section-2">
-    <div class="carol">
-    <div class="carousel-item active mt-3">
-      <div class="row both d-flex align-items-stretch text-md-start g-0">
-        <!-- Left side (image + caption) -->
-        <div class="carousel-img-text col-lg-4 mb-3 mb-md-0">
-          <img src="../IMAGES/xero-img.svg" class="img-fluid mx-auto" alt="Slide 1 image">
-          
-          <div class="tiny-legible mt-5">
-          <p class="tiny mt-2">Company Size</p>
-          <p class="legible">Enterprise</p>
-          <p class="tiny">Industry</p>
-          <p class="legible">Technology</p>
           </div>
-          
-        </div>
-        <!-- Right side (4 bold lines) -->
-        <div class=" comment col-lg-8 d-flex flex-column fw-bold">
-          <p class="comment-legible"><span class="fs-1">"</span>At a large enterprise company like Xero, communicating goals can be tough. Instead of tracking objectives in hard-to-find spreadsheets, Xero uses Asana to monitor and share goals across their global team. This lets everyone see how each regional priority ladders up into their overarching strategy.</p>
-          <p class="comment-tiny-bold mt-4 mb-0">Tony Ward</p>
-          <p>President, The Americas, Xero</p>
-
-
-        </div>
-      </div>
-    </div>
-
-    </div>
-</section>
-
-<section class="section-3">
-    <div class="target-bg">
-
-      <div class="target">
-        <h1 class="target-bold">Stay on target with these features</h1>
-        <p class="target-small">Keep teams aligned to company priorities, so everyone is headed in the right direction. With shared goals and real-time data, you can index on results and course-correct when needed.</p>
-      </div>
-
-      <div class="container">
-      <div class="card" style="width: 22rem;">
-        <!-- <img src="" class="card-img-top" alt="img"> -->
-        <div class="card-body">
-          <h5 class="card-title">Goals</h5>
-          <p class="card-text">Connect every team’s work to company-wide objectives.</p>
-          <a href="#" class="card-link">See goals <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 22rem;">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <h5 class="card-title">Reporting dashboards</h5>
-          <p class="card-text">Visualize the state of your team’s work with real-time charts and insights.</p>
-          <a href="#" class="card-link">See reporting dashboards <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 22rem;">
-        <!-- <img src="..." class="card-img-top" alt="..."> -->
-        <div class="card-body">
-          <h5 class="card-title">Portfolios</h5>
-          <p class="card-text">Your mission control center to monitor connected projects and collaborate across teams.</p>
-          <a href="#" class="card-link">See portfolios <i class="fa-solid fa-arrow-right"></i></a>
-        </div>
-      </div>
-      
-    </div>
-
-
-    </div>
-</section>
-
-<section class="section-4">
-  <div class="grid-section">
-
-    <div class="grid-image-text">
-      <div class="grid-image">
-        <img src="../IMAGES/grid-image-1.png" alt="">
-      </div>
-      <div class="grid-text">
-        <p>SOLUTIONS PARTNER PROGRAM</p>
-        <h1>Amplify your impact with Asana AI</h1>
-        <p>Work smarter and faster with a suite of AI teammates that maximize efficiency at every level–and adapt over time to support your evolving needs.</p>
-        <button type="button" class="grid-btn btn-lg">Meet Asana AI</button>
-      </div>
-    </div>
-
-    <div class="grid-image-text">
-      <div class="grid-image">
-        <img src="../IMAGES/grid-image 2.png" alt="" class="grid-image2">
-      </div>
-      <div class="grid-text">
-        <h1>Asana AI Studio</h1>
-        <p>Design AI-powered workflows to handle your teams' busywork.</p>
-        <button type="button" class="grid-btn btn-lg">Learn more</button>
-      </div>
-    </div>
-
-    <div class="sync">
-      <div class="sync-text-image">
-        <div class="sync-text">
-          <p>APP INTEGRAIONS</p>
-          <h1>Sync data across tools</h1>
-          <p>No more back-and-forth. Asana integrates with 270+ apps, so the information you need is always at your fingertips.</p>
-          <button type="button" class="grid-btn btn-lg">Explore apps</button>
         </div>
 
-        <div class="sync-image">
-          
-          <div class="sync-image-left">
-          <div class="sync-image-box"><img src="../IMAGES/imgi_7_Salesforce.svg" alt="image"> Salesforce <span class="sync-btn"><i class="fa-solid fa-arrow-right"></i></span></div>
+        <div class="anatomy">
+          <div class="anatomy-all">
+            <div class="anatomy-image-text">
+              <div class="anatomy-image">
+                <img src="../IMAGES/anatomy.webp" alt="image" />
+              </div>
+              <div class="anatomy-text">
+                <h2>Anatomy of Work Global Index</h2>
+                <p>
+                  87% of workers with clear, connected goals say their
+                  organization is well-prepared to meet customer
+                  expectations—more than double those without.
+                </p>
+              </div>
+            </div>
+            <button type="button" class="anatomy-btn">See the data</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="sync-image-box"><img src="../IMAGES/tableau.svg" alt="image"> Tableau <span class="sync-btn"><i class="fa-solid fa-arrow-right"></i></span></div>
+    <section class="section-5">
+      <div class="deeper-bg">
+        <div class="deeper">
+          <h1>Go deeper</h1>
+          <p>
+            Goals and reporting are just the start. See what else you can do
+            with Asana.
+          </p>
+        </div>
 
-          <div class="sync-image-box"><img src="../IMAGES/Looker.svg" alt="image">Looker <span class="sync-btn"><i class="fa-solid fa-arrow-right"></i></span></div>
+        <div class="container">
+          <div class="deeper-card" style="width: 22rem">
+            <img
+              src="../IMAGES/project mangement card.svg"
+              class="card-img-top"
+              alt="img"
+            />
+            <div class="deeper-card-body">
+              <h5 class="deeper-card-title">Project and task management</h5>
+              <p class="deeper-card-text">
+                Track work from start to finish in Asana, so every team knows
+                exactly what to do to hit their goals.
+              </p>
+              <a href="#" class="deeper-card-link"
+                >See project management
+                <span class="deeper-icon"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
           </div>
 
-          <div class="sync-image-right">
-          <div class="sync-image-box"><img src="../IMAGES/Power Bi.svg" alt="image"> PowerBI <span class="sync-btn"><i class="fa-solid fa-arrow-right"></i></span></div>
-
-          <div class="sync-image-box"><img src="../IMAGES/Google Sheets.svg" alt="image"> Google Sheets <span class="sync-btn"><i class="fa-solid fa-arrow-right"></i></span></div>
+          <div class="deeper-card" style="width: 22rem">
+            <img
+              src="../IMAGES/imgi_15_Illustration-AutomationRobot-Mini-Blue.svg"
+              alt="image"
+            />
+            <div class="deeper-card-body">
+              <h5 class="deeper-card-title">Workflow automation</h5>
+              <p class="deeper-card-text">
+                Create processes that run themselves, so your team can focus on
+                the next big thing.
+              </p>
+              <a href="#" class="deeper-card-link"
+                >See project management
+                <span class="deeper-icon"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
           </div>
 
+          <div class="deeper-card" style="width: 22rem">
+            <img
+              src="../IMAGES/imgi_16_Illustration-ManagementScale-Mini-Blue.svg"
+              class="card-img-top"
+              alt="image"
+            />
+            <div class="deeper-card-body">
+              <h5 class="deeper-card-title">Resource management</h5>
+              <p class="deeper-card-text">
+                Know what your team is working on and quickly shift resources to
+                your most important priorities.
+              </p>
+              <a href="#" class="deeper-card-link"
+                >See project management
+                <span class="deeper-icon"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
+
+          <div class="deeper-card" style="width: 22rem">
+            <img
+              src="../IMAGES/imgi_17_Illustration-SecurityBadge-Mini-Blue.svg"
+              class="card-img-top"
+              alt="image"
+            />
+            <div class="deeper-card-body">
+              <h5 class="deeper-card-title">Admin and security</h5>
+              <p class="deeper-card-text">
+                Scale with confidence and keep your company’s work safe.
+              </p>
+              <a href="#" class="deeper-card-link"
+                >See project management
+                <span class="deeper-icon"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="anatomy">
-      <div class="anatomy-all">
-      <div class="anatomy-image-text">
-        <div class="anatomy-image">
-          <img src="../IMAGES/anatomy.webp" alt="image">
-        </div>
-        <div class="anatomy-text">
-          <h2>Anatomy of Work Global Index</h2>
-          <p>87% of workers with clear, connected goals say their organization is well-prepared to meet customer expectations—more than double those without.</p>
-        </div>
-      </div>
-      <button type="button" class="anatomy-btn">See the data</button>
-    </div>
+    <section class="section-6">
+      <div class="transform">
+        <h1>Transform the way you work with Asana</h1>
 
-    </div>
+        <div class="container">
+          <div class="transform-card" style="width: 22rem">
+            <!-- <img src="../IMAGES/goal icon.svg" class="transform-card-img-top" alt="img"> -->
+            <div class="transform-card-body">
+              <h5 class="transform-card-title">Start your free trial</h5>
+              <p class="transform-card-text">
+                Try Asana for free. No credit card required.
+              </p>
+              <a href="#" class="transform-card-link"
+                >Get started
+                <span class="transform-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
 
-  </div>
-</section>
+          <div class="transform-card" style="width: 22rem">
+            <!-- <img src="../IMAGES/phone icon.svg" class="transform-card-img-top" alt="..."> -->
+            <div class="transform-card-body">
+              <h5 class="transform-card-title">Watch the demo</h5>
+              <p class="transform-card-text">
+                See how Asana connects companies at scale.
+              </p>
+              <a href="#" class="transform-card-link"
+                >Get started
+                <span class="transform-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
 
-<section class="section-5">
-  <div class="deeper-bg">
-
-    <div class="deeper">
-    <h1>Go deeper</h1>
-    <p>Goals and reporting are just the start. See what else you can do with Asana. </p>
-    </div>
-
-    <div class="container">
-      <div class="deeper-card" style="width: 22rem;">
-        <img src="../IMAGES/project mangement card.svg" class="card-img-top" alt="img">
-        <div class="deeper-card-body">
-          <h5 class="deeper-card-title">Project and task management</h5>
-          <p class="deeper-card-text">Track work from start to finish in Asana, so every team knows exactly what to do to hit their goals.</p>
-          <a href="#" class="deeper-card-link">See project management <span class="deeper-icon"><i class="fa-solid fa-arrow-right"></i></span></a>
-        </div>
-      </div>
-
-      <div class="deeper-card" style="width: 22rem;">
-        <img src="../IMAGES/imgi_15_Illustration-AutomationRobot-Mini-Blue.svg" alt="image">
-        <div class="deeper-card-body">
-          <h5 class="deeper-card-title">Workflow automation</h5>
-          <p class="deeper-card-text">Create processes that run themselves, so your team can focus on the next big thing.</p>
-          <a href="#" class="deeper-card-link">See project management <span class="deeper-icon"><i class="fa-solid fa-arrow-right"></i></span></a>
-        </div>
-      </div>
-
-      <div class="deeper-card" style="width: 22rem;">
-        <img src="../IMAGES/imgi_16_Illustration-ManagementScale-Mini-Blue.svg" class="card-img-top" alt="image">
-        <div class="deeper-card-body">
-          <h5 class="deeper-card-title">Resource management</h5>
-          <p class="deeper-card-text">Know what your team is working on and quickly shift resources to your most important priorities.</p>
-          <a href="#" class="deeper-card-link">See project management <span class="deeper-icon"><i class="fa-solid fa-arrow-right"></i></span></a>
+          <div class="transform-card" style="width: 22rem">
+            <!-- <img src="../IMAGES/people comment icon.svg" class="transform-card-img-top" alt="..."> -->
+            <div class="transform-card-body">
+              <h5 class="transform-card-title">Speak with a sales rep</h5>
+              <p class="transform-card-text">
+                Learn how Asana helps teams collaborate seamlessly.
+              </p>
+              <a href="#" class="transform-card-link"
+                >Get started
+                <span class="transform-arrow"
+                  ><i class="fa-solid fa-arrow-right"></i></span
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="deeper-card" style="width: 22rem;">
-        <img src="../IMAGES/imgi_17_Illustration-SecurityBadge-Mini-Blue.svg" class="card-img-top" alt="image">
-        <div class="deeper-card-body">
-          <h5 class="deeper-card-title">Admin and security</h5>
-          <p class="deeper-card-text">Scale with confidence and keep your company’s work safe.</p>
-          <a href="#" class="deeper-card-link">See project management <span class="deeper-icon"><i class="fa-solid fa-arrow-right"></i></span></a>
+    <section class="section-7">
+      <div class="question-bg">
+        <div class="question">
+          <div class="question-text">
+            <h2>Still have questions? We have answers.</h2>
+          </div>
+
+          <div class="question-accordion">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    What is Goals & Reporting in Asana?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Goals & Reporting in Asana is a unified capability set that
+                    lets you connect work to company objectives, track progress,
+                    monitor performance via real-time dashboards, reporting
+                    tools, and portfolios.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Which Asana plans include access to Goals & Reporting?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The Asana plans that include access to Goals & Reporting are
+                    Advanced+ plans for Goals, while Reporting is available on
+                    Starter+ plans.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    How do Goals connect to projects and tasks?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Goals connect to projects and tasks by allowing you to link
+                    a goal to supporting projects, portfolios, or tasks, and
+                    Asana will update goal progress automatically based on that
+                    work.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFour"
+                  >
+                    Can I set private versus public Goals?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can set private versus public Goals in Asana. Goals can
+                    be shared with your entire organization or restricted to
+                    specific team members, allowing for public or private
+                    visibility.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseFive"
+                  >
+                    What are Portfolios and how are they used?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Portfolios in Asana are tools that let you group multiple
+                    projects to monitor health and metrics across them with
+                    dashboards, custom charts, status updates, and workload
+                    views.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSix"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSix"
+                  >
+                    Which plans include Portfolios?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The plans that include Portfolios are Advanced, Enterprise,
+                    and Enterprise Plus plans.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseSeven"
+                  >
+                    Can portfolios contain other portfolios?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Portfolios can contain other portfolios in Asana. You can
+                    nest portfolios so that portfolios can include other
+                    portfolios as well as projects.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEight"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEight"
+                  >
+                    What are portfolio status updates?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Portfolio status updates are features that let you share
+                    performance summaries across projects in a portfolio using a
+                    built-in status builder.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseNine"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseNine"
+                  >
+                    What are Reporting Dashboards?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Reporting dashboards in Asana are tools that let you
+                    visualize team and organizational data in real time using
+                    charts built from projects, portfolios, goals, or tasks.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTen"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTen"
+                  >
+                    Which chart types are available in dashboards?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTen"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    The chart types available in dashboards include column,
+                    line, burnup, donut, number, and lollipop charts.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item py-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseEleven"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseEleven"
+                  >
+                    Can I customize and share reporting dashboards?
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseEleven"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    You can customize and share reporting dashboards in Asana.
+                    You can build custom charts, apply filters, and share
+                    dashboards with view-only access. You can also export
+                    dashboards to PDF or PPT.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
-    </div>
+    </section>
 
+    <footer class="footer-1">
+      <div class="foot1">
+        <div class="footer-accordion">
+          <div class="footer-menu logo-menu">
+            <a href="">
+              <img
+                src="../IMAGES/asana 3 dot original.png"
+                alt="logo"
+                class="three-dots"
+              />
+            </a>
+          </div>
 
-  </div>
-</section>
+          <div class="footer-menu">
+            <p>New to Asana?</p>
+            <div class="footer-list">
+              <p><a href="">Product overview</a></p>
+              <p><a href="">All features</a></p>
+              <p><a href="">Latest feature release</a></p>
+              <p><a href="">Pricing</a></p>
+              <p><a href="">Starter plan</a></p>
+              <p><a href="">Advanced plan</a></p>
+              <p><a href="">Enterprise</a></p>
+              <p><a href="">App integrations</a></p>
+              <p><a href="">AI work management</a></p>
+              <p><a href="">Project management</a></p>
+              <p>
+                <a href=""
+                  >Resource <br />
+                  management</a
+                >
+              </p>
+            </div>
+          </div>
 
-<section class="section-6">
-  <div class="transform">
-    <h1>Transform the way you work with Asana</h1>
+          <div class="footer-menu">
+            <p>Use cases</p>
+            <div class="footer-list">
+              <p>
+                <a href=""
+                  >Campign <br />
+                  management</a
+                >
+              </p>
+              <p><a href="">Content calender</a></p>
+              <p><a href="">Creative production</a></p>
+              <p><a href="">Goal management</a></p>
+              <p><a href="">New hire onboarding</a></p>
+              <p>
+                <a href=""
+                  >Organizational <br />
+                  planning</a
+                >
+              </p>
+              <p><a href="">Product launches</a></p>
+              <p><a href="">Resources planning</a></p>
+              <p><a href="">Strategic planning</a></p>
+              <p><a href="">Project intake</a></p>
+              <p><a href="">All use cases</a></p>
+            </div>
+          </div>
 
-    <div class="container">
-      <div class="transform-card" style="width: 22rem;">
-        <!-- <img src="../IMAGES/goal icon.svg" class="transform-card-img-top" alt="img"> -->
-        <div class="transform-card-body">
-          <h5 class="transform-card-title">Start your free trial</h5>
-          <p class="transform-card-text">Try Asana for free. No credit card required.</p>
-          <a href="#" class="transform-card-link">Get started <span class="transform-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+          <div class="footer-menu">
+            <p>Solutions</p>
+            <div class="footer-list">
+              <p><a href="">Marketing</a></p>
+              <p><a href="">Operations</a></p>
+              <p><a href="">IT</a></p>
+              <p><a href="">Product</a></p>
+              <p><a href="">Sales</a></p>
+              <p><a href="">Healthcare</a></p>
+              <p><a href="">Retail</a></p>
+              <p><a href="">Education</a></p>
+              <p><a href="">Nonprofits</a></p>
+              <p><a href="">All teams</a></p>
+            </div>
+          </div>
+
+          <div class="footer-menu">
+            <p>Resources</p>
+            <div class="footer-list">
+              <p><a href="">Help Center</a></p>
+              <p><a href="">Get support</a></p>
+              <p><a href="">Asana Academy</a></p>
+              <p><a href="">Certifications</a></p>
+              <p><a href="">Forum</a></p>
+              <p><a href="">Resource hub</a></p>
+              <p><a href="">Project templates</a></p>
+              <p><a href="">Events</a></p>
+              <p><a href="">Customer Success</a></p>
+              <p><a href="">Developers and API</a></p>
+              <p><a href="">Partners</a></p>
+              <p><a href="">Sitemap</a></p>
+            </div>
+          </div>
+
+          <div class="footer-menu">
+            <p>Company</p>
+            <div class="footer-list">
+              <p><a href="">About us</a></p>
+              <p><a href="">Leadership</a></p>
+              <p><a href="">Customers</a></p>
+              <p><a href="">Careers</a></p>
+              <p><a href="">Inside Asana</a></p>
+              <p><a href="">Culture</a></p>
+              <p><a href="">Press</a></p>
+              <p><a href="">Investor relations</a></p>
+              <p><a href="">Trust and security</a></p>
+              <p><a href="">Privacy</a></p>
+              <p>
+                <a href=""
+                  >Supplier <br />
+                  responsibility</a
+                >
+              </p>
+              <p>
+                <a href=""
+                  >Sustainability and <br />
+                  ESG</a
+                >
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+    </footer>
 
-      <div class="transform-card" style="width: 22rem;">
-        <!-- <img src="../IMAGES/phone icon.svg" class="transform-card-img-top" alt="..."> -->
-        <div class="transform-card-body">
-          <h5 class="transform-card-title">Watch the demo</h5>
-          <p class="transform-card-text">See how Asana connects companies at scale.</p>
-          <a href="#" class="transform-card-link">Get started <span class="transform-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+    <footer class="footer-2">
+      <div class="foot2">
+        <div class="footer2-menu">
+          <div>© 2025 Asana, Inc.</div>
+
+          <div class="lang">
+            <span class="material-symbols-outlined">language</span>
+            <a href="" class="eng">English</a>
+          </div>
+
+          <div class="social-media">
+            <a
+              href="https://x.com/intent/follow?screen_name=asana"
+              class="socials"
+              target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/asana"
+              class="socials"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/asana/"
+              class="socials"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/asana"
+              class="socials"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UC2BoogM0AqwOJyoSp1S4ClQ"
+              class="socials"
+              target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+
+          <div>
+            <a href="" class="conditions"
+              ><span class="terms">Terms</span> &
+              <span class="privacy">Privacy</span></a
+            >
+          </div>
+          <div class="download">
+            <a href="">
+              <img
+                src="../IMAGES/imgi_13_Download_App_Store_Badge_US.svg"
+                class="store"
+                alt="img"
+              />
+            </a>
+            <a href="">
+              <img
+                src="../IMAGES/imgi_15_Google_Play_EN.svg"
+                alt="img"
+                class="store"
+              />
+            </a>
+          </div>
         </div>
       </div>
-
-      <div class="transform-card" style="width: 22rem;">
-        <!-- <img src="../IMAGES/people comment icon.svg" class="transform-card-img-top" alt="..."> -->
-        <div class="transform-card-body">
-          <h5 class="transform-card-title">Speak with a sales rep</h5>
-          <p class="transform-card-text">Learn how Asana helps teams collaborate seamlessly.</p>
-          <a href="#" class="transform-card-link">Get started <span class="transform-arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
-        </div>
-      </div>
-      
-    </div>
-
-  </div>
-</section>
-
-<section class="section-7">
-  <div class="question-bg">
-    <div class="question">
-
-      <div class="question-text">
-        <h2>Still have questions? We have answers.</h2>
-      </div>
-
-      <div class="question-accordion">
-
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        What is Goals & Reporting in Asana?
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Goals & Reporting in Asana is a unified capability set that lets you connect work to company objectives, track progress, monitor performance via real-time dashboards, reporting tools, and portfolios.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Which Asana plans include access to Goals & Reporting?
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">The Asana plans that include access to Goals & Reporting are Advanced+ plans for Goals, while Reporting is available on Starter+ plans.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        How do Goals connect to projects and tasks?
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Goals connect to projects and tasks by allowing you to link a goal to supporting projects, portfolios, or tasks, and Asana will update goal progress automatically based on that work.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-        Can I set private versus public Goals?
-      </button>
-    </h2>
-    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">You can set private versus public Goals in Asana. Goals can be shared with your entire organization or restricted to specific team members, allowing for public or private visibility.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-        What are Portfolios and how are they used?
-      </button>
-    </h2>
-    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Portfolios in Asana are tools that let you group multiple projects to monitor health and metrics across them with dashboards, custom charts, status updates, and workload views.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-        Which plans include Portfolios?
-      </button>
-    </h2>
-    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">The plans that include Portfolios are Advanced, Enterprise, and Enterprise Plus plans.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-        Can portfolios contain other portfolios?
-      </button>
-    </h2>
-    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Portfolios can contain other portfolios in Asana. You can nest portfolios so that portfolios can include other portfolios as well as projects.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-        What are portfolio status updates?
-      </button>
-    </h2>
-    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Portfolio status updates are features that let you share performance summaries across projects in a portfolio using a built-in status builder.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-        What are Reporting Dashboards?
-      </button>
-    </h2>
-    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Reporting dashboards in Asana are tools that let you visualize team and organizational data in real time using charts built from projects, portfolios, goals, or tasks.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-        Which chart types are available in dashboards?
-      </button>
-    </h2>
-    <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">The chart types available in dashboards include column, line, burnup, donut, number, and lollipop charts.</div>
-    </div>
-  </div>
-
-  <div class="accordion-item py-3">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-        Can I customize and share reporting dashboards?
-      </button>
-    </h2>
-    <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">You can customize and share reporting dashboards in Asana. You can build custom charts, apply filters, and share dashboards with view-only access. You can also export dashboards to PDF or PPT.</div>
-    </div>
-  </div>
-
-</div>
-
-      </div>
-
-    </div>
-
-
-  </div>
-</section>
-
-<footer class="footer-1">
-  <div class="foot1">
-
-  <div class="footer-accordion">
-    <div class="footer-menu logo-menu">
-      <a href="">
-        <img src="../IMAGES/asana 3 dot original.png" alt="logo" class="three-dots">
-      </a>
-    </div>
-
-    <div class="footer-menu">
-      <p>New to Asana?</p>
-      <div class="footer-list">
-        <p><a href="">Product overview</a></p>
-        <p><a href="">All features</a></p>
-        <p><a href="">Latest feature release</a></p>
-        <p><a href="">Pricing</a></p>
-        <p><a href="">Starter plan</a></p>
-        <p><a href="">Advanced plan</a></p>
-        <p><a href="">Enterprise</a></p>
-        <p><a href="">App integrations</a></p>
-        <p><a href="">AI work management</a></p>
-        <p><a href="">Project management</a></p>
-        <p><a href="">Resource <br> management</a></p>
-      </div>
-    </div>
-
-    <div class="footer-menu">
-      <p>Use cases</p>
-      <div class="footer-list">
-        <p><a href="">Campign <br> management</a></p>
-        <p><a href="">Content calender</a></p>
-        <p><a href="">Creative production</a></p>
-        <p><a href="">Goal management</a></p>
-        <p><a href="">New hire onboarding</a></p>
-        <p><a href="">Organizational <br> planning</a></p>
-        <p><a href="">Product launches</a></p>
-        <p><a href="">Resources planning</a></p>
-        <p><a href="">Strategic planning</a></p>
-        <p><a href="">Project intake</a></p>
-        <p><a href="">All use cases</a></p>
-      </div>
-    </div>
-
-    <div class="footer-menu">
-      <p>Solutions</p>
-      <div class="footer-list">
-        <p><a href="">Marketing</a></p>
-        <p><a href="">Operations</a></p>
-        <p><a href="">IT</a></p>
-        <p><a href="">Product</a></p>
-        <p><a href="">Sales</a></p>
-        <p><a href="">Healthcare</a></p>
-        <p><a href="">Retail</a></p>
-        <p><a href="">Education</a></p>
-        <p><a href="">Nonprofits</a></p>
-        <p><a href="">All teams</a></p>
-      </div>
-    </div>
-
-    <div class="footer-menu">
-      <p>Resources</p>
-      <div class="footer-list">
-        <p><a href="">Help Center</a></p>
-        <p><a href="">Get support</a></p>
-        <p><a href="">Asana Academy</a></p>
-        <p><a href="">Certifications</a></p>
-        <p><a href="">Forum</a></p>
-        <p><a href="">Resource hub</a></p>
-        <p><a href="">Project templates</a></p>
-        <p><a href="">Events</a></p>
-        <p><a href="">Customer Success</a></p>
-        <p><a href="">Developers and API</a></p>
-        <p><a href="">Partners</a></p>
-        <p><a href="">Sitemap</a></p>
-      </div>
-    </div>
-
-    <div class="footer-menu">
-      <p>Company</p>
-      <div class="footer-list">
-        <p><a href="">About us</a></p>
-        <p><a href="">Leadership</a></p>
-        <p><a href="">Customers</a></p>
-        <p><a href="">Careers</a></p>
-        <p><a href="">Inside Asana</a></p>
-        <p><a href="">Culture</a></p>
-        <p><a href="">Press</a></p>
-        <p><a href="">Investor relations</a></p>
-        <p><a href="">Trust and security</a></p>
-        <p><a href="">Privacy</a></p>
-        <p><a href="">Supplier <br> responsibility</a></p>
-        <p><a href="">Sustainability and <br> ESG</a></p>
-      </div>
-    </div>
-
-    </div>
-
-  </div>
-</footer>
-
-<footer class="footer-2">
-  <div class="foot2">
-    <div class="footer2-menu">
-    <div>© 2025 Asana, Inc.</div>
-
-    <div class="lang"><span class="material-symbols-outlined">language</span> <a href="" class="eng">English</a></div>
-
-    <div class="social-media">
-      <a href="https://x.com/intent/follow?screen_name=asana"  class="socials" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.linkedin.com/company/asana"  class="socials" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/asana/" class="socials" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.facebook.com/asana"  class="socials" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://www.youtube.com/channel/UC2BoogM0AqwOJyoSp1S4ClQ" class="socials" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-    </div>
-
-    <div><a href="" class="conditions"><span class="terms">Terms</span> & <span class="privacy">Privacy</span></a></div>
-    <div class="download">
-      <a href="">
-        <img src="../IMAGES/imgi_13_Download_App_Store_Badge_US.svg" class="store" alt="img">
-      </a>
-      <a href="">
-        <img src="../IMAGES/imgi_15_Google_Play_EN.svg" alt="img" class="store">
-      </a>
-    </div>
-
-    </div>
-
-  </div>
-</footer>
-
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
 </html>

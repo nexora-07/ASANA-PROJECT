@@ -905,7 +905,7 @@ ul{
         font-size: 1em;
     }
     .accelerate-btn{
-        margin-top: 10px;
+      margin-top: 10px;
     }
   .cards-container {
     flex-direction: column;    
@@ -926,4 +926,27 @@ ul{
   .card-text {
     font-size: 1em;
   }
+
+  /* ==============footer1=========== */
+    .footer-accordion{
+        flex-wrap: wrap;
+    }
+    .footer-menu{
+        width: 140px;
+    }
+    .footer-menu p{
+        font-size: 1em;
+    }
+    .footer-list p a{
+        font-size: 0.8em;
+    }
+    .footer-list{
+        padding-bottom: 40px;
+    }
+    .support-bold{
+        font-size: 1.6em;
+    }
+    .support-small{
+        font-size: 0.8em;
+    }
 }

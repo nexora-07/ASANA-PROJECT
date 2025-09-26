@@ -1452,17 +1452,18 @@ ul{
     .leader-card {
     flex-direction: column;  
     align-items: center;
+    justify-content: center;   /* ensures vertical centering */
     gap: 1.5em;              
-    margin-top: 40px;
-    margin-bottom: 40px;
-    padding-left: 30px;
-    right: 30px;
+    margin: 40px auto;         /* auto centers the whole container */
+    padding: 0;                /* remove left/right padding */
   }
 
   .leader-card-image {
     width: 100%; 
-    min-width: 350px;
+    max-width: 350px;          /* prevents it from stretching too big */
     height: auto;
+    margin: 0 auto;            /* centers the image itself */
+    display: block;
   }
 
   .leader-card-text {
@@ -1519,5 +1520,28 @@ ul{
     .logo-row:nth-child(2) .logo-track {
         animation-delay: -36s;
     }
+    /* ==============footer1=========== */
+    .footer-accordion{
+        flex-wrap: wrap;
+    }
+    .footer-menu{
+        width: 140px;
+    }
+    .footer-menu p{
+        font-size: 1em;
+    }
+    .footer-list p a{
+        font-size: 0.8em;
+    }
+    .footer-list{
+        padding-bottom: 40px;
+    }
+    .support-bold{
+        font-size: 1.6em;
+    }
+    .support-small{
+        font-size: 0.8em;
+    }
+
     
 }
