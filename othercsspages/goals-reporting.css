@@ -710,7 +710,7 @@ ul{
 }
 
 .deeper-card{
-    flex: 1 1 300px;
+    flex: 1 1 200px;
 }
 
 .deeper-card-title{
@@ -749,13 +749,6 @@ ul{
     margin: auto;
     padding: 100px 0px;
 }
-
-/* .container{
-
-    display: flex;
-
-    gap: 2em;
-} */
 
 .transform h1{
     max-width: 400px;
@@ -1079,8 +1072,6 @@ ul{
         font-size: 2.6em;
     }
     
-
-
     .footer2-menu{
         flex-wrap: wrap;
         justify-content: center;
@@ -1093,6 +1084,18 @@ ul{
         font-size: 0.8em;
         padding: 0;
     }
+
+    .transform .container {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;    /* center horizontally */
+    gap: 20px;              /* spacing between cards */
+  }
+
+  .transform-card {
+    width: 100% !important;   /* take full width of container */
+    max-width: 22rem;         /* but don’t stretch too wide */
+  }
 }
 
 
@@ -1393,4 +1396,17 @@ ul{
         font-size: 0.8em;
     }
   
+}
+
+@media (max-width: 391px) {
+    .deeper-card-title{
+        font-size: 1.2em;
+    }
+    .deeper-card-text{
+        font-size: 0.8em;
+    }
+    .deeper-card{
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }

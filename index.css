@@ -1517,8 +1517,12 @@ ul{
         width: 220px;
         height: 100px;
     }
+    .logo-track{
+        animation: scroll-left 10s linear infinite;  
+    }
     .logo-row:nth-child(2) .logo-track {
-        animation-delay: -36s;
+        animation-delay: -60s;
+        animation: scroll-right 10s linear infinite;  
     }
     /* ==============footer1=========== */
     .footer-accordion{
