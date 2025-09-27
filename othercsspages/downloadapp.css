@@ -777,6 +777,10 @@ ul{
 }
 
 @media(max-width: 740px) {
+  .desktop-text{
+    padding-top: 40px;
+  }
+
     .question {
     flex-direction: column;   /* stack items */
     align-items: center;

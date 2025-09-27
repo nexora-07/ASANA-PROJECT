@@ -1207,11 +1207,12 @@ ul{
     /* =============section1========== */
     .big{
         font-size: 1.2em;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        padding-top: 80px;
     }
     .small{
-        font-size: 1em;
-        margin-bottom: 30px;
+        font-size: 0.8em;
+        margin-bottom: 40px;
     }
 
         /* ===section2== */
@@ -1273,6 +1274,10 @@ ul{
     /* ===========section5============ */
     .get-started-left h1{
         font-size: 2.6em;
+    }
+
+    .btn7{
+        margin-bottom: 40px;
     }
     
     /* ============footer1=========== */
@@ -1452,17 +1457,18 @@ ul{
     .leader-card {
     flex-direction: column;  
     align-items: center;
-    justify-content: center;   /* ensures vertical centering */
+    justify-content: center;  
     gap: 1.5em;              
-    margin: 40px auto;         /* auto centers the whole container */
-    padding: 0;                /* remove left/right padding */
+    margin: 40px auto;         
+    padding: 0;     
+    width: 260px;           
   }
 
   .leader-card-image {
     width: 100%; 
-    max-width: 350px;          /* prevents it from stretching too big */
+    max-width: 350px;          
     height: auto;
-    margin: 0 auto;            /* centers the image itself */
+    margin: 0 auto;            
     display: block;
   }
 

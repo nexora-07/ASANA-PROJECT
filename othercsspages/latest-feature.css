@@ -873,18 +873,24 @@ ul{
 }
 
 @media (max-width: 576px) {
+  .summer-text{
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
     .summer-text h1{
         font-size: 2em;
+        
     }
     .summer-text p{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .full{
         width: 100%;
     }
     .summer-btn1, .summer-btn2{
         font-size: 0.8em;
-        padding: 12px 20px;
+        padding: 16px 20px;
     }
     .object-fit-cover{
         width: 100%;
@@ -901,11 +907,13 @@ ul{
     .ai-grid ul li{
         font-size: 1em;
     }
-    .accelerate h2{
+    .accelerate h1{
         font-size: 1em;
+        
     }
     .accelerate-btn{
       margin-top: 10px;
+      padding: 10px 20px;
     }
   .cards-container {
     flex-direction: column;    
