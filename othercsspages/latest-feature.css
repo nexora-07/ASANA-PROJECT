@@ -874,7 +874,7 @@ ul{
 
 @media (max-width: 576px) {
   .summer-text{
-    padding-top: 80px;
+    padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -896,7 +896,7 @@ ul{
         width: 100%;
     }
     .summer-grid h3{
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .summer-grid p{
         font-size: 0.8em;

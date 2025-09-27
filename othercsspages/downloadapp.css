@@ -674,7 +674,7 @@ ul{
   }
 
   .desktop-text {
-    padding-top: 60px;        
+    padding-top: 80px;        
     padding-right: 0;        
   }
 
@@ -808,6 +808,16 @@ ul{
 }
 
 @media (max-width: 576px) {
+
+  .features-text h1{
+    font-size: 1.8em;
+  }
+  .features-text p{
+    font-size: 1em;
+  }
+  .question .question-text h2{
+    font-size: 1.8em;
+  }
     .desktop-text h1 {
     margin-bottom: 10px;
     font-size: 2em;         
@@ -854,11 +864,7 @@ ul{
   .features{
     padding-top: 60px;
   }
-  .features-text h1 {
-    font-size: 2em;
-  }
   .features-text p {
-    margin-top: 20px;
     font-size: 1.2em;
   }
 
